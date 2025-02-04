@@ -6,8 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
-  body { background-color: black; color: white; }
-  .w3-card { background-color: #222; color: white; }
+  body { background-color: black; color: white; border: 5px solid grey; padding: 10px; }
+  .w3-card { background-color: #222; color: white; border: 2px solid white; }
   a { color: lightgray; }
 </style>
 </head>
@@ -52,21 +52,43 @@
 <!-- Project Description Section -->
 <section id="project" class="w3-container w3-padding-32">
   <h2>Project Description</h2>
-  <p>The Sorcerer’s Void project aims to be a reimagined Souls-like video game created in Unreal Engine 5, combining elements of action, strategy, and cinematic gameplay. Set in a mysterious medieval world, the player's goal is to escape and return home by navigating a dangerous landscape filled with unique enemies and combat challenges.</p>
-  <p>This project will implement features such as a refined combat system with fluid mechanics for attacking, dodging, parrying, and cinematic executions that encourage a strategic approach to the gameplay.</p>
-  <p>This document outlines the revised concept and project management plan for Sorcerer’s Void, detailing the design vision, implementation goals, and development framework to ensure a successful product that showcases an innovative gaming experience.</p>
+  <div id="project-description"></div>
 </section>
 
 <!-- Resources Section -->
 <section id="resources" class="w3-container w3-padding-32">
-    <h2>Resources</h2>
-    <p><a href="https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-5-5-documentation" target="_blank">Unreal Engine 5.5 Documentation</a></p>
-  </section>
+  <h2>Resources</h2>
+  <p><a href="https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-5-5-documentation" target="_blank">Unreal Engine 5.5 Documentation</a></p>
+</section>
 
 <!-- Footer -->
 <footer class="w3-container w3-dark-gray w3-padding-16 w3-center">
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 </footer>
+
+<!-- JavaScript to Inject Project Description -->
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+      document.getElementById("project-description").innerHTML = `
+          <p>Sorcerer’s Void is a challenging action RPG in the Souls-like genre, developed in Unreal Engine 5. The game blends familiar mechanics with new elements to create a fresh and engaging experience.</p>
+          
+          <p>Set in a medieval world, players navigate shifting landscapes, floating terrains, and mysterious portals, encountering formidable enemies with distinct attack patterns. Combat emphasizes fluid mechanics, including combos, dodging, parrying, and cinematic executions, requiring a strategic approach. Enemies utilize AI-driven behavior trees, creating dynamic and responsive encounters.</p>
+          
+          <p>Exploration plays a key role, with hidden items and an inventory system aiding progression. A gem-based progression system enhances stats such as strength, defense, health, and stamina.</p>
+          
+          <p>Key Features:</p>
+          <ul>
+              <li>Player Combat System – Multiple weapons, blocking, sprinting, and dodging.</li>
+              <li>Enemy AI System – Behavior trees drive dynamic enemy actions.</li>
+              <li>Character Progression – Upgrade stats through experience and special gems.</li>
+              <li>Inventory & Loot System – Manage weapons, armor, and consumables.</li>
+              <li>Tutorial System – Introduces core combat and movement mechanics.</li>
+          </ul>
+          
+          <p>Built using C++ and Unreal Engine Blueprints, the game integrates AIModule, NavigationSystem, AnimGraphRuntime, and EnhancedInput. Upon completion, it will be packaged for distribution on GitHub.</p>
+      `;
+  });
+</script>
 
 </body>
 </html>
