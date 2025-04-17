@@ -1,133 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Sorcerer's Void - Project Page</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-  @keyframes flash {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.5; }
-  }
-
-  body {
-    background-color: black;
-    font-family: palatino, serif;
-    margin: 0;
-    padding: 0;
-  }
-
-  .logo-container {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    width: 150px;
-  }
-
-  .logo-container img {
-    width: 100%;
-    height: auto;
-    animation: flash 2s infinite;
-  }
-
-  header {
-    background-color: #7a7575;
-    padding: 30px;
-    text-align: center;
-    font-size: 35px;
-    color: white;
-  }
-
-  aside {
-    background-color: #7a7575;
-    padding: 5px;
-    font-size: 20px;
-    color: white;
-  }
-
-  footer {
-    background-color: #7a7575;
-    padding: 10px;
-    text-align: center;
-    color: white;
-  }
-
-  .nav1 {
-    float: left;
-    width: 15%;
-    background: #3a3a3a;
-    padding: 10px;
-  }
-
-  article {
-    margin-left: 17%;
-    padding: 50px;
-    width: 70%;
-    background-color: white;
-  }
-
-  h1 {
-    color: white;
-    font-size: 55px;
-    text-align: center;
-  }
-
-  h2, h3 {
-    color: white;
-  }
-
-  .p1 {
-    color: black;
-    text-align: center;
-    font-size: 22px;
-  }
-
-  ul.bodyUL, ul.sidebarUL {
-    font-size: 18px;
-    list-style-type: disc;
-  }
-
-  .container {
-    text-align: center;
-  }
-
-  .Buttons {
-    background-color: black;
-    border: 2px solid #3a3a3a;
-    color: white;
-    padding: 5px 10px;
-    font-size: 15px;
-    cursor: pointer;
-  }
-
-  .image-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 40px;
-    justify-content: center;
-    background-color: #222;
-  }
-
-  .image-item {
-    width: 300px;
-    text-align: center;
-    background-color: #444;
-    padding: 10px;
-    border-radius: 10px;
-  }
-
-  .image-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-  }
-
-  .image-item p {
-    color: white;
-    margin-top: 10px;
-  }
-</style>
+  <title>Sorcerer's Void - Project Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="StyleOne.css">
 </head>
 <body>
 
@@ -146,20 +23,20 @@
       <div class="container">
         <h2>Team #24</h2>
         <ul class="sidebarUL">
-          <li style="color:white">Zak Kholmatov</li>
-          <li style="color:white">Mason Haines</li>
-          <li style="color:white">Omar Vega</li>
+          <li>Mason Haines</li>
+          <li>Zak Kholmatov</li>
+          <li>Omar Vega</li>
         </ul>
       </div>
 
       <div class="container">
         <h2>Instructors and External Advisors</h2>
         <ul class="sidebarUL">
-          <li style="color:white">David Feil-Seifer</li>
-          <li style="color:white">Sara Davis</li>
-          <li style="color:white">Vinh Le</li>
-          <li style="color:white">Levi Scully</li>
-          <li style="color:white">Joshua Dahl - Masters Student and Lecturer, Department of CSE</li>
+          <li>David Feil-Seifer</li>
+          <li>Sara Davis</li>
+          <li>Vinh Le</li>
+          <li>Levi Scully</li>
+          <li>Joshua Dahl - Masters Student and Lecturer, Department of CSE</li>
         </ul>
       </div>
 
@@ -199,24 +76,26 @@
   </article>
 </section>
 
-<section class="image-gallery">
-  <div class="image-item">
-    <img src="https://placehold.co/300x200" alt="Placeholder">
-    <p>Image description goes here</p>
+<section class="slideshow-container">
+  <div id="slide-group" class="slide-group"></div>
+  <div class="slideshow-buttons">
+    <button onclick="prevSlide()">Prev</button>
+    <button onclick="nextSlide()">Next</button>
   </div>
-  <div class="image-item">
-    <img src="https://placehold.co/300x200" alt="Placeholder">
-    <p>Image description goes here</p>
-  </div>
-  <div class="image-item">
-    <img src="https://placehold.co/300x200" alt="Placeholder">
-    <p>Image description goes here</p>
-  </div>
+</section>
+
+<section class="slideshow-container">
+  <iframe width="560" height="315" 
+  src="https://youtu.be/dbg41geqctI?si=LCswzxLDff7sva6q" 
+  title="YouTube video player" frameborder="0" 
+  allowfullscreen>
+  </iframe>
 </section>
 
 <footer>
   <p>This project was developed in Spring 2025 as part of the course CS 426 Senior Projects in Computer Science.</p>
 </footer>
 
+<script src="firstScript.js"></script>
 </body>
 </html>

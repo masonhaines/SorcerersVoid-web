@@ -1,0 +1,178 @@
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+  
+  body {
+    background-color: black;
+    font-family: palatino, serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+    .logo-container {
+    position: absolute;
+    left: 20px;
+    top: 25%;
+    transform: translateY(-50%);
+    width: 150px;
+    z-index: 2;
+    }
+
+  
+  .logo-container img {
+    width: 60%;
+    height: auto;
+    animation: flash 2s infinite;
+  }
+  
+  header {
+    background: url('images/FirstPortal.png') no-repeat center center;
+    background-size: cover;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    position: relative; 
+    min-height: 150px; 
+  }
+
+  font color for header and the shadow to make it pop
+    header h1,
+    header h3 {
+    color: #ffffff;
+    text-shadow: 4px 4px 4px #736091;
+    z-index: 2;
+    position: relative;
+    }
+  
+  aside {
+    background-color: #7a7575;
+    padding: 5px;
+    font-size: 20px;
+    color: white;
+    border-radius: 10px;
+  }
+  
+  footer {
+    background-color: #7a7575;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+  
+  .nav1 {
+    float: left;
+    width: 15%;
+    /* background: #3a3a3a; */
+    padding: 10px;
+  }
+  
+  article {
+    margin-left: 17%;
+    padding: 50px;
+    width: 70%;
+    background-color: white;
+    border-radius: 30px;
+  }
+  
+  h1 {
+    color: white;
+    font-size: 55px;
+    text-align: center;
+  }
+  
+  h2, h3 {
+    color: white;
+  }
+  
+  .p1 {
+    color: black;
+    text-align: center;
+    font-size: 22px;
+  }
+  
+  ul.bodyUL, ul.sidebarUL {
+    font-size: 18px;
+    list-style-type: disc;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .Buttons {
+    background-color: white;
+    border: 2px solid #3a3a3a;
+    color: black;
+    padding: 5px 10px;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  
+  .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
+    justify-content: center;
+    background-color: #222;
+  }
+  
+  .image-item {
+    width: 300px;
+    text-align: center;
+    background-color: #444;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .image-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .image-item p {
+    color: white;
+    margin-top: 10px;
+  }
+  
+  /* Slideshow */
+  .slideshow-container {
+    text-align: center;
+    padding: 40px;
+    /* background-color: #222; */
+  }
+  
+  .slideshow-container img {
+    width: 600px;
+    border-radius: 10px;
+  }
+  
+  .slideshow-buttons button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #7a7575;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  .slide-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .slide-group img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  
