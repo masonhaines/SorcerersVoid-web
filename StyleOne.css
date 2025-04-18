@@ -11,12 +11,12 @@
   }
   
     .logo-container {
-    position: absolute;
-    left: 20px;
-    top: 25%;
-    transform: translateY(-50%);
-    width: 150px;
-    z-index: 2;
+      position: absolute;
+      left: 20px;
+      top: 10%;
+      transform: translateY(-50%);
+      width: 150px;
+      z-index: 2;
     }
 
   
@@ -170,7 +170,7 @@
   }
   
   .slide-group img {
-    width: 300px;
+    width: 450px;
     height: auto;
     border-radius: 10px;
   }
