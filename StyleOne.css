@@ -169,10 +169,16 @@
     gap: 20px;
   }
   
-  .slide-group img {
+  /* .slide-group img {
     width: 450px;
     height: auto;
     border-radius: 10px;
+  } */
+
+  .slide-group img {
+    max-width: 50%;
+    height: auto;
   }
+  
   
   

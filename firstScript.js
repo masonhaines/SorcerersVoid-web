@@ -1,19 +1,28 @@
 const images = [
-    "images/oldImages/boss.png",
-    "images/oldImages/died.png",
-    "images/oldImages/enemy.png",
-    "images/oldImages/inventory.png",
-    "images/oldImages/menu.png",
-    "images/oldImages/save.png",
-    "images/oldImages/tutorial.png"
-  ];
+  // "images/oldImages/boss.png",
+  // "images/oldImages/died.png",
+  // "images/oldImages/enemy.png",
+  // "images/oldImages/inventory.png",
+  // "images/oldImages/menu.png",
+  // "images/oldImages/save.png",
+  // "images/oldImages/tutorial.png",
+  "images/execution.png",
+  "images/FB.png",
+  "images/FirstPortal.png",
+  "images/itemfound.png",
+  "images/parry.png",
+  "images/Player.png",
+  "images/playerportal.png"
+];
+
+
   
   let index = 0;
   const group = document.getElementById("slide-group");
   
   function showSlides() {
     group.innerHTML = "";
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 1; i++) {
       const img = document.createElement("img");
       img.src = images[(index + i) % images.length];
       group.appendChild(img);
